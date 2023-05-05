@@ -1,0 +1,133 @@
+.box {
+    width: 1000px;
+    margin: 1px auto;
+    /* border: solid 1px gray; */
+    overflow: hidden;
+    /* 避免長方框下面顯示不正常 */
+}
+
+.box img {
+    max-width: 450px;
+    max-height: 500px;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.box p ,
+.box div p {
+    display: block;
+    padding: 0px 20px 20px 20px;
+}
+
+.box span ,
+.box div span {
+    display: block;
+    color: #217E99;
+}
+
+div h5 {
+    color: #E17704;
+    font-size: 2rem;
+}
+
+.part {
+    margin-bottom: 1%;
+}
+
+#a80plus {
+    width: 100%;
+    max-width: 1000px;
+    max-height: none;
+}
+
+.original_picture span{
+    display: block;
+    margin-bottom: 1%;
+}
+
+/* .button_table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px auto;
+}
+
+.button_table button {
+    border-radius: 1%;
+    width: 25%;
+    margin: 10px auto;
+} */
+
+
+@media screen and (max-width: 1200px) {
+    .box {
+        width: 1000px;
+    }
+
+    hr {
+        max-width: 700px;
+    }
+
+    .box p,
+    .box span,
+    .box div span,
+    .box div p{
+        max-width: 800px;
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .box {
+        width: 400px;
+    }
+    
+    .box p,
+    .box span,
+    .box div span,
+    .box div p {
+        max-width: 600px;
+    }
+    
+    hr {
+        max-width: 600px;
+    }
+
+    #a80plus {
+        width: 60%;
+    }
+
+    #body {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+        width: 600px;
+    }
+
+    .box p,
+    .box span,
+    .box div span,
+    .box div p{
+        max-width: 400px;
+    }
+
+    hr {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box {
+        width: 200px;
+    }
+
+    .box p,
+    .box span,
+    .box div span,
+    .box div p {
+        max-width: 150px;
+    }
+}

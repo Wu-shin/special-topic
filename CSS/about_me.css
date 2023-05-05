@@ -1,0 +1,144 @@
+body {
+    background-color: #efefef;
+}
+
+/* motivation */
+.motivation, .function{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 20px;
+    /* max-width: 80%; */
+}
+
+.motivation h1, .function h1{
+    color: #E17704;
+    font-size: 45px;
+}
+
+.motivation p, .function p{
+    padding: 10px 0 10px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+/* left */
+.left{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    margin: 10px 0 10px 0;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.left .item ul{
+    text-align: left;
+    /* padding-left: 60%; */
+}
+.left .item li{
+    margin-left: 60px;
+    padding:10px 10px 5px 0px;
+}
+/* right */
+/* .right{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    margin: 10px 0 10px 0;
+    max-width: 888px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.right .item ul{
+    padding-left: 10%;
+}
+.right .item li{
+    list-style: none;
+    padding:10px 10px 5px 0;
+}
+.right .first_li{
+    padding-right: 40px;
+} */
+/* team */
+.team_member,
+.team_group{
+    font-size: 25px;
+}
+.team_name{
+    font-size: 40px;
+}
+
+
+/* person */
+.person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    /* margin-top: 5%; */
+    /* top: 50%; */
+    padding-bottom: 20px;
+}
+
+.person span{
+    display: block;
+    text-align: center;
+}
+
+.first_li{
+    font-size: 40px;
+    color: #E17704;
+}
+/* item */
+.item{
+    display: flex;
+    align-items: center;
+}
+.item li{
+    font-size: 30px;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    .motivation, .function{
+        grid-template-columns: 1fr 8fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .motivation, .function{
+        grid-template-columns: 1fr 10fr 1fr;
+    }
+    .motivation h1, .function h1{
+        font-size: 25px;
+    }
+    .motivation p, .function p{
+        font-size: 20px;
+    }
+    .first_li{
+        font-size: 25px;
+    }
+    .item li{
+        font-size: 20px;
+    }
+    .team_member,
+    .team_group{
+        font-size: 15px;
+    }
+    .team_name{
+        font-size: 30px;
+    }
+}

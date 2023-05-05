@@ -1,0 +1,277 @@
+*:not(.fa){
+    font-family: 'Microsoft JhengHei',"微軟正黑體" !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1500px) {
+    header {
+        background-color: rgb(106, 246, 204);
+        background-color: #398787;
+        background-color: #1c3130;
+    }
+    
+    header ul {
+        /* height:100px; */
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr 0.4fr;
+        text-align: center;
+        font-size: 1.5rem;
+        list-style-type: none;
+    }
+
+    header div{
+        background-color: #398787;
+        display: flex;
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    header div a{
+        display: flex;
+        margin-left: 10%;
+    }
+    
+    header h3{
+        /* background-color: #398787; */
+        color: white;
+        /* padding-top: 7px; */
+    }
+    header li:hover,
+    .active:hover {
+        /* background-color: rgb(101, 201, 167); */
+        /* background-color: rgb(4, 192, 129); */
+    }
+    
+    header a {
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        color: white;
+        font-size: 35px;
+        line-height: 85px;
+    }
+    
+    header a:hover {
+        outline: 0;
+        color: #ccc;
+        color: #808080;
+        -webkit-transition: all .5s ease 0s;
+        -moz-transition: all .5s ease 0s;
+        -o-transition: all .5s ease 0s;
+        -ms-transition: all .5s ease 0s;
+        transition: all .5s ease 0s;
+        text-decoration: none;
+        /* color: blue; */
+        /* color: white; */
+    }
+    
+    header img {
+        height: 100%;
+    }
+
+    /* header img{ */
+    /* #logo{
+        padding-top: 5px;
+        width: 80px;
+        height: 50px;
+        margin-right: 20px;
+    } */
+    #logo{
+        width: 80%;
+    }
+    #user_logo{
+        display: block;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    header {
+        background-color: #398787;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    
+    header h3 {
+        display: inline;
+        /* display: inline-block;
+        height: 100%; */
+        color: white;
+        padding: 0 0 5px;
+        font-size: 100%;
+    }
+
+    /* header img { */
+    /* #logo{
+        width: 80px;
+        height: 50px;
+        margin-right: 5px;
+    } */
+    #logo{
+        width: 30%;
+    }
+
+    header a {
+        text-decoration: none;
+    }
+}
+
+.active {
+    /* background-color: rgb(200, 241, 181); */
+}
+
+.price_nav {
+    /* background-color: rgb(101, 201, 167); */
+    /* background-color: rgb(106, 246, 204); */
+    background-color: white;
+    padding: 10px;
+    padding-left: 10%;
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, .2);
+}
+
+#total_price {
+    padding-left: 70%;
+}
+
+/* #top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 2px solid #5cb85c;
+    border: 0;
+    color: #285c28;
+    background-color: rgba(56, 135, 135, 1);;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    border-radius: 50%;
+} */
+
+/* https://ezbox.idv.tw/131/back-to-top-button-without-images/ */
+/* 40px */
+#top {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.8;
+    /* background: #000; */
+    background: rgba(56, 135, 135, 1);
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    /* display: none; */
+}
+
+#top::before,
+#top::after {
+    width: 18px;
+    height: 5px;
+    border-radius: 3px;
+    background: white;
+    position: absolute;
+    content: "";
+}
+
+#top::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.5rem;
+}
+
+#top::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.5rem;
+}
+
+#top:focus {
+    outline: none;
+}
+
+footer {
+    background-color: rgb(243, 222, 190);
+    background-color: rgb(66, 65, 65);
+    color: white;
+    padding: 10px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-areas: 
+    "count copyright_english"
+    "date copyright_chinese";
+}
+
+footer span{
+    position:relative;
+    left: 5%;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media screen and (max-width: 1500px) {
+    /* header ul {
+        display: grid;
+        grid-template-rows: 1fr 0.01fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 1fr;
+    } */
+    #total_price {
+        padding-left: 60%;
+    }
+    #logo{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #total_price {
+        padding-left: 40%;
+    }
+    #logo{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header h3{
+        font-size: 80%;
+    }
+    footer {
+        display: grid;
+        grid-template-areas: 
+        "copyright_english" 
+        "copyright_chinese" 
+        "count" 
+        "date";
+    }
+    footer span {
+        text-align: center;
+    }
+    footer p {
+        text-align: center;
+    }
+    #total_price {
+        padding-left: 20%;
+    }
+    #logo{
+        width: 70%;
+    }
+}
+

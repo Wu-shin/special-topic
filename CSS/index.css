@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #398787;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+header h3 {
+    display: inline;
+    color: white;
+    padding: 5px 0;
+}
+
+body {
+    background-color: #efefef;
+}
+
+section{
+    padding: 25px 0 25px;
+}
+
+section a{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+
+section a{
+    text-decoration: none;
+    color: black;
+}
+.icon{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.icon img{
+    width: 250px;
+}
+
+.describe{
+    padding-left: 20px;
+}
+
+.describe h1{
+    font-size: 50px;
+    margin:10px 0 10px 0;
+}
+
+.describe p{
+    font-size: 30px;
+    /* up right down left */
+    margin:10px 0 10px 50px;
+    max-width: 500px;
+}
+
+.describe button{
+    font-size: 2rem;
+    border: 2px solid #398787;
+    color: white;
+    border-radius: 20px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, .2);
+    background-color: #398787;
+    margin:10px 0 10px 100px;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+}
+
+@media screen and (max-width: 1500px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    .describe h1{
+        font-size: 30px;
+    }
+    .describe p{
+        font-size: 20px
+    }
+    .describe button{
+        font-size: 1.5rem;
+    }
+    .icon img {
+        width: 150px;
+    }
+}

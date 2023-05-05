@@ -1,0 +1,64 @@
+ /* #introduce_pic {
+    border: 1px solid black;
+} */
+
+body {
+    /* background-image: url("../picture/background.jpg");
+    background-size: 100% 100%; */
+    background-color: #efefef;
+} 
+
+#pic_div {
+    text-align: center;
+}
+
+#introduce_pic{
+    width: 1000px;
+}
+
+@media screen and (max-width: 1500px) {
+    #introduce_pic{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #introduce_pic{
+        width: 900px;
+    }
+    #CPU_pic, #brain, 
+    #GPU_pic, #eyes, 
+    #memory_pic, #desktop_pic,
+    #SSD_pic, #file_table,
+    #disk_pic,
+    #power_pic, #heart{
+        width: 350px !important;
+    }
+
+    #a80plus{
+        width: 770px !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #a80plus{
+        width: 420px !important;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #introduce_pic{
+        width: 800px;
+    }
+
+    #a80plus{
+        width: 420px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #introduce_pic{
+        width: 400px;
+    }
+}
+

@@ -1,0 +1,411 @@
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body{
+    background-color: #efefef;
+}
+
+#Platform_Title,#GPU_Title,#CPU_Title{
+	font-size:25px;
+}
+
+div[id*="_div"] label{
+    margin-left: 1%;
+}
+
+div[id*="_div"] div{
+    margin-bottom: 10px;  
+}
+
+div[id*="_div"] {
+    font-size: 20px;
+}
+
+label{
+    font-size: 20px;
+}
+
+#budget_div span{
+    font-size: 40px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+#budget_div input{
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#max_budget{
+    font-size: 25px;
+    text-align: center;
+}
+
+#budget_div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#platform,#CPU_Brand,#GPU_Brand{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#text_span{
+    font-size: 25px;
+}
+
+#software {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#main_area {
+    text-align: center;
+}
+
+#sent_button{
+    color: #ffffff;
+    background-color: rgba(0, 113, 227, 1);
+    border-top-right-radius: 980px;
+    border-bottom-left-radius: 980px;
+    border-bottom-right-radius: 980px;
+    border-top-left-radius: 980px;
+    border-width: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: nowrap;
+    background-clip: border-box;
+    text-decoration-style: solid;
+    background-origin: padding-box;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+#SoftwareListArea{
+    position:relative;
+    margin: auto;
+    text-align:left;
+    left: 20vw;
+    justify-content: center;
+    width: 60%;
+    /*display:inline-block;*/
+}
+.Generate_Result_Table{
+    text-align:center;
+    margin:auto;
+    border: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-spacing: 0;
+    /* box-shadow:0 2px 8px rgba(0, 0, 0, .2); */
+}
+.Generate_Result_Table td{
+    /* border: solid; */
+    text-align:left;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.Generate_Result_Table th{
+    /* border: solid; */
+    text-align:left;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+/*label,input{
+    cursor: pointer;
+}*/
+#ResultList_Generate_Result_Table{
+    visibility:hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#ResultList_Generate_Result_Table span{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.Generate_Result_Table :nth-child(1) th{
+    background-color: #00a29c;
+    color:black;
+}
+#switch_button{
+    justify-content: center;
+    margin: 1vw;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #b4ecec;
+}
+
+#PDF_btn, #PIC_btn{
+    margin: 1vw;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #b4ecec;
+}
+
+#image_append {
+    text-align: center;
+    padding-top: 8px;
+}
+
+#image_append img{
+    width: 80%;
+    border: 2px solid black;
+}
+
+#CPU_additional, #GPU_additional, #budget_additional{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 999em;
+    border:2px solid rgb(0, 104, 181);
+    color: rgb(0, 104, 181);
+    cursor: pointer;
+    font-size: 19px !important;
+}
+
+.model_pic{
+    position: relative;
+    width: 100%;
+}
+
+#exampleModalLabel{
+    font-size: 350%;
+    color:#E17704;
+}
+
+.Review{
+    color: #ffffff;
+    background-color: rgba(0, 113, 227, 1);
+    border-top-right-radius: 980px;
+    border-bottom-left-radius: 980px;
+    border-bottom-right-radius: 980px;
+    border-top-left-radius: 980px;
+    border-width: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: nowrap;
+    background-clip: border-box;
+    text-decoration-style: solid;
+    background-origin: padding-box;
+    cursor: pointer;
+}
+#Window_Inner_Confirm{
+    color: #ffffff;
+    background-color: rgba(0, 113, 227, 1);
+    border-top-right-radius: 980px;
+    border-bottom-left-radius: 980px;
+    border-bottom-right-radius: 980px;
+    border-top-left-radius: 980px;
+    border-width: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: nowrap;
+    background-clip: border-box;
+    text-decoration-style: solid;
+    background-origin: padding-box;
+    cursor: pointer;
+    font-size: 200%;
+}
+.Purpose_SPAN{
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+}
+.Purpose_RWD_SPAN{
+    display: inline-block;
+    text-align: left;
+    display:none;
+}
+.Purpose{
+    width: 120px;
+    display: inline-block;
+    text-align: left;
+}
+.RWD_Slice{
+    display: none;
+}
+
+@media screen and (max-width: 1500px) {
+    .RWD_Slice{
+        display: block;
+    }
+    .Purpose_SPAN{
+        display: inline-block;
+        text-align: left;
+        display:none;
+    }
+    .Purpose_RWD_SPAN{
+        width: 10%;
+        display: inline-block;
+        text-align: left;
+    }
+    #budget_div span{
+        font-size: 300%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #budget_div input{
+        width: 30%;
+        height: 20%;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 250%;
+    }
+    #max_budget{
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        border-bottom: 10px;
+    }
+    #budget_div{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #platform,#CPU_Brand,#GPU_Brand,#software{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #platform span,#CPU_Brand span,#GPU_Brand span,#software #text_span{
+        font-size: 300%;
+    }
+
+    .Confirm_Input{
+        zoom: 250%;
+    }
+    #platform section label,#CPU_Brand section label,#GPU_Brand section label{
+        font-size: 250%;
+    }
+    #CPU_Brand section label{
+        display: inline-block;
+        width: 10%;
+    }
+    #GPU_Brand section label{
+        display: inline-block;
+        width: 10%;
+    }
+    
+    #sent_button{
+        color: #ffffff;
+        background-color: rgba(0, 113, 227, 1);
+        border-top-right-radius: 980px;
+        border-bottom-left-radius: 980px;
+        border-bottom-right-radius: 980px;
+        border-top-left-radius: 980px;
+        border-width: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+        white-space: nowrap;
+        background-clip: border-box;
+        text-decoration-style: solid;
+        background-origin: padding-box;
+        cursor: pointer;
+        font-size: 300%;
+    }
+    #software {
+        display: block;
+        text-align: center;
+    }
+    .Software_Purpose div{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Delete_Purpose{
+        width: 5%;
+        height: 5%;
+        margin: 1%;
+    }
+
+    .Purpose_RWD_SPAN{
+        font-size: 250%;
+        width: 15%;
+    }
+
+    .Purpose{
+        display: inline-block;
+        font-size: 200%;
+        width:25%;
+    }
+    
+    .Review{
+        color: #ffffff;
+        background-color: rgba(0, 113, 227, 1);
+        border-top-right-radius: 980px;
+        border-bottom-left-radius: 980px;
+        border-bottom-right-radius: 980px;
+        border-top-left-radius: 980px;
+        border-width: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+        white-space: nowrap;
+        background-clip: border-box;
+        text-decoration-style: solid;
+        background-origin: padding-box;
+        cursor: pointer;
+        font-size: 200%;
+        margin-left: 3%;
+    }
+
+    #Add_Button{
+        font-size: 200%;
+    }
+
+    #main_area {
+        text-align: center;
+    }
+    
+    #CPU_additional, #GPU_additional, #budget_additional{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 999em;
+        border:2px solid rgb(0, 104, 181);
+        color: rgb(0, 104, 181);
+        cursor: pointer;
+        font-size: 35px !important;
+    }
+    #Software_List_Content input[type="checkbox"]{
+        width: 30px;
+        height: 30px;
+        margin-right: 2%;
+    }
+    #Software_List_Content label{
+        font-size: 300%;
+    }
+}
